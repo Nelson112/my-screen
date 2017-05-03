@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="my_screen.css">
+  <meta charset="utf-8">
+  <title>my_screen</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+  <script id="temp" type="text/handlebars-x">
+    <h1> This Is A <mark>S.M.A.R.T</mark> Goal</h1>
+    <h2>{{goalTitle}}</h2>
+    <p>{{goalDefination}}</p>
+    <p>by: {{name}}</p>
+  </script>
+
+  <script id="pastGoalList" type="text/handlebars-x">
+  <h2>Past <mark>SMART</mark> goal</h2>
+  <table>
+    <tr>
+      <th>Goal Title</th>
+      <th>Goal Definition</th>
+      <th>By :(name)</th>
+    </tr>
+    {{#each goals}}
+    <tr>
+    <td>{{goalTitle}}</td>
+    <td>{{goalDefination}}</td>
+    <td>{{name}}</td>
+    </tr>
+    {{/each}}
+    </table>
+  </script>
+
+</head>
+
+<body>
+  <h1>Rate Your Goals</h1>
+  <h2>What is your Goal?</h2> Name
+  <input id="usersName" type="text" name="name" placeholder="Type in your Name..."> Goal Title
+  <br>
+  <input id="goalTitle" type="text" name="name" placeholder="What's your goal about?"> Define Goal
+  <br>
+  <textarea id="goal" name="name" rows="8" cols="40" placeholder="Define your Goal..."></textarea>
+  <br>
+  <h2>Is it <mark>SMART</mark>?</h2>
+  <div class="secondOutPut"></div>
+  <div class="checkboxs">
+    <label>
+      <input id="sBox" type="checkbox" name="smart" value="Specific">
+      <mark>S</mark>pecific</label>
+    <br>
+    <label>
+      <input id="mBox" type="checkbox" name="smart" value="Measurable">
+      <mark>M</mark>easurable</label>
+    <br>
+    <label></label>
+    <input id="aBox" type="checkbox" name="smart" value="Achievable">
+    <mark>A</mark>chievable</label>
+    <br>
+    <label>
+      <input id="rBox" type="checkbox" name="smart" value="Relevant">
+      <mark>R</mark>elevant</label>
+    <br>
+    <label>
+      <input id="tBox" type="checkbox" name="smart" value="Timebound">
+      <mark>T</mark>ime-bound</label>
+    <br>
+  </div>
+  <button id="submit" type="button" name="button">submit</button>
+  <button id="pastGoals" type="button" name="button">Past Goals</button>
+
+
+
+  <div class="outPut">
+
+  </div>
+  <!-- done -->
+  <script src="my_screen.js" charset="utf-8"></script>
+</body>
+
+</html>
