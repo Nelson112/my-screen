@@ -3,30 +3,33 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  color: #23d732;;
+  color: #23d732;
+  ;
 }
 #submit, #pastGoals {
-    background-color: #23d732; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 4px 2px;
-    cursor: pointer;
+  background-color: #23d732;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
-#submit:hover{
+#submit:hover {
   background-color: white;
   color: #23d732;
   border: 2px solid #23d732;
 }
-#pastGoals:hover{
+#pastGoals:hover {
   background-color: white;
   color: #23d732;
   border: 2px solid #23d732;
 }
+
 }
 .outPut {
   background-color: #23d732;
@@ -84,7 +87,7 @@ textarea {
   background-color: #f8f8f8;
   resize: none;
 }
-.secondOutPut{
+.secondOutPut {
   background-color: #23d732;
   color: white;
   width: 50%;
@@ -93,22 +96,34 @@ textarea {
   float: right;
 }
 table {
-color: #333; /* Lighten up font color */
-font-family: Helvetica, Arial, sans-serif; /* Nicer font */
-width: 100%;
-border-collapse:
-collapse; border-spacing: 0;
+  color: #333;
+  /* Lighten up font color */
+
+  font-family: Helvetica, Arial, sans-serif;
+  /* Nicer font */
+
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
-
+td, th {
+  border: 1px solid #CCC;
+  height: 30px;
+}
+/* Make cells a bit taller */
 th {
-background: #23d732; /* Light grey background */
-font-weight: bold; /* Make sure they're bold */
+  background: #23d732;
+  /* Light grey background */
+
+  font-weight: bold;
+  /* Make sure they're bold */
+}
+td {
+  background: #d6ffb6;
+  /* Lighter grey background */
+
+  text-align: center;
+  /* Center our text */
 }
 
-td {
-background: #d6ffb6; /* Lighter grey background */
-text-align: center; /* Center our text */
-}
 /*done*/
